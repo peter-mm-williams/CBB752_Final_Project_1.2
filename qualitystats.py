@@ -105,7 +105,7 @@ def qstats(filename,outfile):
 	f.write('\n\n')
 	f.write('For the Distribution of read lengths see: Sequence_Length_Distribution.png')
 	f.write('\n\n')
-	f.write('For a plot of the per read quality see: Per_Base_Sequence_Quality.png')
+	f.write('For a plot of the per base quality see: Per_Base_Sequence_Quality.png')
 	f.write('\n\n')
 	f.write('For a plot of the distribution of mean quality per sequence see: Per_Sequence_Mean_Quality_Distribution.png')
 	f.close()
