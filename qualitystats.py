@@ -15,7 +15,7 @@ __email__ = "peter.williams@yale.edu"
 ###					The -o flag is optional
 ###
 ### Input Formats:	-i 	string of corresponding fastq file
-###					-o	string containing the name of the file to which the output information is saved
+###			-o	string containing the name of the file to which the output information is saved
 ### Output Format:	txt file containing the file name, the number of sequences and the titles of corresponding plots
 
 ### Import libraries
