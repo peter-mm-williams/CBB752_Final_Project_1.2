@@ -37,6 +37,20 @@ qualitystats.py takes one required input (name of the fastq file to be processed
 
 ## Sample Output
 
+Quality Score Statistics and Figure names for sample-input.fastq
+
+Number of Sequences = 100000
+
+For the Distribution of read lengths see: Sequence_Length_Distribution.png
 
 ![Fig1](https://github.com/peter-mm-williams/CBB752_Final_Project_1.2/blob/master/Sequence_Length_Distribution.png)
+
+For a plot of the per base quality score see: Per_Base_Sequence_Quality.png
+
+![Fig2](https://github.com/peter-mm-williams/CBB752_Final_Project_1.2/blob/master/Per_Base_Sequence_Quality.png)
+
+For a plot of the distribution of mean quality per sequence see: Per_Sequence_Mean_Quality_Distribution.png
+
+![Fig3](https://github.com/peter-mm-williams/CBB752_Final_Project_1.2/blob/master/Per_Sequence_Mean_Quality_Distribution.png)
+
 
