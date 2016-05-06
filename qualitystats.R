@@ -27,10 +27,9 @@ rm(list=ls())
 
 # suppress warnings
 oldw <- getOption("warn")
-#options(warn = -1)
+options(warn = -1)
 
 # Load the required packages
-
 list.of.packages <- c("optparse", "reshape2", "ggplot2")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
@@ -58,12 +57,10 @@ option_list = list(
 opt_parser = OptionParser(option_list=option_list);
 opt = parse_args(opt_parser);
 
-
-setwd("~/Box Sync/coursework/CBB752_BioinformaticsMiningSimulation/final/CBB752_Final_Project_1.2/")
-infile <- "sample-input_1K.fastq"
-outfile <- "output_R"
-
+#######
 # create function for generating quality assessment plots
+#######
+
 QualityStats <- function(infile, outfile) {
   
   # input and process using shortRead
