@@ -114,11 +114,14 @@ QualityStats <- function(infile, outfile) {
   # plot boxplots of read qualities by position
   ggplot(m.scores.means, aes(x = factor(Position), y = value)) +
     geom_boxplot(fill = "green", outlier.size = 0) +
-    geom_line(aes(x = Position, y = means), color = "red", size = 1) +
+    geom_line(aes(x = Position, y = means, color = "Mean"), size = 1) +
     labs(x = "Position", y = "Quality Score", 
          title = "Read Quality Scores for each Position")+
-    theme(axis.text.x = element_text(angle = 45))+
-    scale_x_discrete(breaks = c(seq(1, nrow(means), by = 4)))
+    theme(axis.text.x = element_text(angle = 45),
+          legend.position = c(0.9, 0.2), 
+          legend.background = element_rect(color = "black", size = 1, linetype = "solid"))+
+    scale_x_discrete(breaks = c(seq(1, nrow(means), by = 4)))+
+    scale_color_manual("", values=c(Mean="red"))
   ggsave(paste(outfile, "_perBase_qual.png", sep = ""))
   
   
