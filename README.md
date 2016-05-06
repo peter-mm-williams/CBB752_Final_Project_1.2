@@ -1,13 +1,17 @@
-**README for CBB752_Final_Project_1.2**
----------------------------------------------------------------
+#README for CBB752_Final_Project_1.2
+***
+
+
 Tool that generates “quality control statistics” from FastQ file.
 
 Note: This tool is part of a set of bioinformatic and biological structure tools created for CBB752 at Yale University in the Spring 2016. The website containing links to the set of tools can be found at: https://github.com/CBB752Spring2016/CBB752Spring2016.github.io
 
-# The python tool that accomplishes this task is named qualitystats.py
+__The tools that accomplish this task are named qualitystats.py and qualitystats.R__
 
-## General
-qualitystats.py takes one required input (name of the fastq file to be processed) and one optional input (the name of the txt file to which the filename and titles of the corresponding plots are output).  This tool creates png files of the following plots:
+***
+
+### General
+The script take one required input (name of the fastq file to be processed) and one optional input (the name of the txt file to which the filename and titles of the corresponding plots are output).  This tool creates png files of the following plots:
   
   * Distribution of Read Lengths
   
@@ -15,7 +19,7 @@ qualitystats.py takes one required input (name of the fastq file to be processed
   
   * Distribution of mean quality per sequence
 
-## Usage
+### Py Usage
   
   Usage:      python3 qualitystats.py -i < input file > -o < output file >
   
@@ -25,8 +29,18 @@ qualitystats.py takes one required input (name of the fastq file to be processed
   	     python3 qualitystats.py -i sample-input.fastq -o sample-output.txt
          python3 qualitystats.py -i sample-input.fastq
   ```
+
+### R Usage
   
-## Input and Output formats
+  Usage:      Rscript qualitystats.R -i < input file > -o < output file >
+  
+  Examples:  
+  ```
+  	     Rscript qualitystats.R -i sample-input.fastq -o sample-output.txt
+         Rscript qualitystats.R -i sample-input.fastq
+  ```
+  
+### Input and Output formats
   
   Input Formats:	
                   
@@ -35,7 +49,7 @@ qualitystats.py takes one required input (name of the fastq file to be processed
 
   Output Format:	txt file containing the file name, the number of sequences and the titles of corresponding plots
 
-## Sample Output
+### Sample Output
 
 Quality Score Statistics and Figure names for sample-input.fastq
 
@@ -52,5 +66,4 @@ For a plot of the per base quality score see: Per_Base_Sequence_Quality.png
 For a plot of the distribution of mean quality per sequence see: Per_Sequence_Mean_Quality_Distribution.png
 
 ![Fig3](https://github.com/peter-mm-williams/CBB752_Final_Project_1.2/blob/master/Per_Sequence_Mean_Quality_Distribution.png)
-
 
