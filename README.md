@@ -6,7 +6,7 @@ Python tool that generates quality control statistics from FastQ file. A tool th
 Python tool that generates quality control statistics from FastQ file. The name of the tool is qualitystats.py. 
 
 ### General
-The script take one required input (name of the fastq file to be processed) and one optional input (the name of the txt file to which the filename and titles of the corresponding plots are output).  This tool creates png files of the following plots:
+The tool is named qualitystats.py. It takes one required input (name of the fastq file to be processed) and one optional input (the name of the txt file to which the filename and titles of the corresponding plots are output).  This tool creates png files of the following plots:
   
   * Distribution of Read Lengths
   
