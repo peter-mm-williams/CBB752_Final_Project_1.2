@@ -1,9 +1,0 @@
-Quality Score Statistics and Figure names for sample-input_1K.fastq
-
-Number of Sequences = 250
-
-For the Distribution of read lengths see: output_R_length_hist.png
-
-For a plot of the per base quality score see: output_R_perBase_qual.png
-
-For a plot of the distribution of mean quality per sequence see: output_R_qual_hist.png
