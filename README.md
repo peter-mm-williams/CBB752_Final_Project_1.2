@@ -14,9 +14,9 @@ The tool is named qualitystats.py. It takes one required input (name of the fast
 
 ### Usage
   
-  #### Usage:      python3 qualitystats.py -i < input file > -o < output file >
+#### Usage:      python3 qualitystats.py -i < input file > -o < output file >
   
-  #### Examples:  
+#### Examples:  
   ```{r NCBI_python, engine="python", highlight=TRUE}
 # Usage from terminal:
   python3 qualitystats.py -i sample-input.fastq -o sample-output.txt
