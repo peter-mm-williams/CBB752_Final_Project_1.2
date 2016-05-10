@@ -1,14 +1,9 @@
-#README for CBB752_Final_Project_1.2
-***
+**README for Quality Statistics**
+---------------------------------------------------------------
 
+Python tool that generates quality control statistics from FastQ file. A tool that accomplishes this task in the language R can be found [here] (https://github.com/dspak/CBB752_Final_Project_1.2). This tool is part of a set of bioinformatic and biological structure tools created for CBB752 at Yale University in the Spring 2016. The website containing the set of tools can be found [here] (http://cbb752spring2016.github.io).
 
-Tool that generates “quality control statistics” from FastQ file.
-
-Note: This tool is part of a set of bioinformatic and biological structure tools created for CBB752 at Yale University in the Spring 2016. The website containing links to the set of tools can be found at: https://github.com/CBB752Spring2016/CBB752Spring2016.github.io
-
-__The tools that accomplish this task are named qualitystats.py and qualitystats.R__
-
-***
+Python tool that generates quality control statistics from FastQ file. The name of the tool is qualitystats.py. 
 
 ### General
 The script take one required input (name of the fastq file to be processed) and one optional input (the name of the txt file to which the filename and titles of the corresponding plots are output).  This tool creates png files of the following plots:
@@ -19,25 +14,15 @@ The script take one required input (name of the fastq file to be processed) and 
   
   * Distribution of mean quality per sequence
 
-### Py Usage
+### Usage
   
-  Usage:      python3 qualitystats.py -i < input file > -o < output file >
+  #### Usage:      python3 qualitystats.py -i < input file > -o < output file >
   
-  Examples:  
+  #### Examples:  
   ```{r NCBI_python, engine="python", highlight=TRUE}
   # Usage from terminal:
   	     python3 qualitystats.py -i sample-input.fastq -o sample-output.txt
          python3 qualitystats.py -i sample-input.fastq
-  ```
-
-### R Usage
-  
-  Usage:      Rscript qualitystats.R -i < input file > -o < output file >
-  
-  Examples:  
-  ```
-  	     Rscript qualitystats.R -i sample-input.fastq -o sample-output.txt
-         Rscript qualitystats.R -i sample-input.fastq
   ```
   
 ### Input and Output formats
