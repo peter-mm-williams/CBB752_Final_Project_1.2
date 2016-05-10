@@ -18,18 +18,18 @@ The tool is named qualitystats.py. It takes one required input (name of the fast
   
   #### Examples:  
   ```{r NCBI_python, engine="python", highlight=TRUE}
-  # Usage from terminal:
-  	     python3 qualitystats.py -i sample-input.fastq -o sample-output.txt
-         python3 qualitystats.py -i sample-input.fastq
+# Usage from terminal:
+  python3 qualitystats.py -i sample-input.fastq -o sample-output.txt
+  python3 qualitystats.py -i sample-input.fastq
   ```
   
 ### Input and Output formats
   
-  Input Formats:	
-  * input (-i): string of corresponding fastq file
-  * output (-o): string containing the name of the file to which the output information is saved
+Input Formats:	
+ * input (-i): string of corresponding fastq file
+ * output (-o): string containing the name of the file to which the output information is saved
 
-  Output Format:	txt file containing the file name, the number of sequences and the titles of corresponding plots
+Output Format:	txt file containing the file name, the number of sequences and the titles of corresponding plots
 
 ### Sample Output
 
